@@ -11,7 +11,7 @@ print("Kafka producer initialized successfully!")
 
 # Load Parquet data into DataFrame
 try:
-    df = pd.read_parquet("yellow_tripdata_2025-09.parquet").head(20)
+    df = pd.read_parquet("yellow_tripdata_2025-09.parquet")
     print(f"Loaded Parquet file.")
 except Exception as e:
     print("Error while reading the data:", e)
